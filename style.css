@@ -1,0 +1,124 @@
+/* Reset + fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f7f8f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #c7f0db, #f6d6d6, #d6e5fa);
+  text-align: center;
+  padding: 5rem 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Projects section */
+.projects {
+  padding: 4rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #a3c9f9;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #84b4f4;
+}
+
+/* Playground section */
+.playground {
+  background-color: #f2f4f5;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.playground h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+#playground-area {
+  margin-top: 2rem;
+  min-height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: #777;
+}
